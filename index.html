@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unit-4-Game</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="assets/css/style.css" >
+     <script src="assets/javascript/game.js"></script>
+     
+    
+</head>
+<body>
+    <div id="bodycss">
+    <div>
+        <header class="header">
+            <h1>Crystals Collectors!</h1>
+        </header>
+    </div>
+    <div class="instruction">
+            <p>You are given a random number at the start of the game.</p>
+    
+            <p>Your target is to match the sum of values  obtained by clicking each crystal with random number shown above the crystals.</p>
+    
+            <p>You win if your total score matches to random number.  Game then starts over with another random number and new set of value for each crystal. You will lose if your score goes above the random number.Game restarts again.</p>
+    
+            <p>The value of crystal will remain hidden until you click on them to appear. </p>
+    
+    </div>
+    <div id="selector">
+        <table>
+            <tr>
+                <td class="RanNum">
+                     <spn><p id="randomNumber"></p></spn>
+                </td>
+                <td>
+                    <div id="valueRecorder">
+                        <p id="win" >Win:<span id="win1"></span></p>
+                        <p id="loss">Losses:<span id="loss1"></span></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>
+                   <button><img class="img1" src= "assets/images/crystal1.png"></button>
+                </td>
+              <br>
+                <td>
+                    <button><img  class="img2" src= "assets/images/crystal2.PNG"></button>
+                </td>
+                
+                <td>
+                    <button><img class="img3" src="assets/images/crystal3.png"></button>
+                </td>
+                <td>
+                    <button><img class="img4" src= "assets/images/crystal4.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+        <div id=Score>
+            <p>Your Total Score is:<span id="totalscore"></span></p>
+        </div>
+    <div>
+         <p id="display"></p>
+    </div>
+</div>
+</body>
+
+</html>
